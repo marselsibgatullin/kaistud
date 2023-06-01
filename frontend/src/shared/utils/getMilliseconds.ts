@@ -1,0 +1,1 @@
+export const getMilliseconds = (time: string) => (+time.split(":")[0] * 60 * 60 + +time.split(":")[1] * 60) * 1000

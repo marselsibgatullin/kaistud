@@ -1,0 +1,49 @@
+@import "../../../theme/variables.scss";
+
+.header {
+  background: var(--KaiStud-palette-background-paper);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1201;
+
+  @media (min-width: $md) {
+    padding: 10px 15px;
+  }
+
+  &__profile-button {
+    white-space: nowrap;
+
+    display: none;
+
+    @media (min-width: $md) {
+      display: inline;
+    }
+
+    &--mobile {
+      @media (min-width: $md) {
+        display: none;
+      }
+    }
+  }
+
+  &__logo {
+    width: 32px;
+
+    @media (min-width: $md) {
+      width: 95px;
+    }
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  &__burger {
+    @media (min-width: $md) {
+      display: none;
+    }
+  }
+}

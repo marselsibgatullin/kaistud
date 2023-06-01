@@ -1,0 +1,19 @@
+@import "theme/variables.scss";
+
+.base-layout {
+  height: 100%;
+
+  &__container {
+    display: flex;
+    padding-top: $headerHeightMobile;
+
+    @media (min-width: $md) {
+      padding-top: $headerHeight;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &__box {
+    width: 400px;
+    max-width: 100%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,12 @@
+@import "theme/variables.scss";
+
+.not-found {
+  height: calc(100vh - $headerHeight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $md) {
+    height: calc(100vh - $headerHeightMobile);
+  }
+}
